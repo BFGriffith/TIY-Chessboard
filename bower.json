@@ -1,0 +1,21 @@
+{
+  "name": "TIY-Chessboard",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Epicurean306/TIY-Chessboard",
+  "authors": [
+    "Epicurean306 <benjaminforbesgriffith@gmail.com>"
+  ],
+  "description": "a doubly-indexed array demonstration",
+  "main": "index.html",
+  "keywords": [
+    "chess"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
