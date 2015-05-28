@@ -133,8 +133,10 @@ textarea {
 }
 .piece {}
 .white {}
-.rook {}
-.piece-white-rook {
+.piece .blackRook {
+  content: "\265c";
+}
+.piece .whiteRook {
   /* What goes here? */
 }
 /* ==========================================================================
