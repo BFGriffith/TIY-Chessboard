@@ -97,8 +97,24 @@ textarea {
     min-width: 1.5in;
     max-width: 8in;
 }
+.topAlgebraic p {
+  margin: 0; padding: 0;
+  display: inline-block;
+  width: 12.5%;
+  float: left;
+  font-size: 350%;
+  text-align: center;
+}
 .chessboard {
   margin-top: 4ex;
+}
+.bottomAlgebraic p {
+  margin: 0; padding: 0;
+  display: inline-block;
+  width: 12.5%;
+  float: left;
+  font-size: 350%;
+  text-align: center;
 }
 .chessboard .row {
     margin: 0;
