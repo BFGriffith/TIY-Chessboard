@@ -89,8 +89,8 @@ textarea {
 /* ==========================================================================
    custom styles
    ========================================================================== */
-   /*Thought about switching to HTML, using unicode elements, and changing the tags
-   to be more semantic, but decided*/
+   /*Thought about switching to HTML, using unicode elements there, and
+   changing the HTML-tags to be more semantic, but decided against it.*/
 .container {
     width: 80%;
     margin: 0 auto;
