@@ -1,6 +1,25 @@
 (function(window) {
-window.chess = {
 
+var game = {
+  move1: ['.rank-2', '.file-d', '.rank-4', '.file-d', 'WhitePawn'],
+  move2: ['.rank-8', '.file-g', '.rank-6', '.file-f', 'BlackKnightG'],
+  move3: ['.rank-2', '.file-c', '.rank-4', '.file-c', 'WhitePawn'],
+  move4: ['.rank-7', '.file-e', '.rank-6', '.file-e', 'BlackPawn'],
+  move5: ['.rank-2', '.file-g', '.rank-3', '.file-g', 'WhitePawn'],
+  move6: ['.rank-7', '.file-d', '.rank-5', '.file-d', 'BlackPawn'],
+  move7: ['.rank-1', '.file-f', '.rank-5', '.file-g', 'WhiteBishopF'],
+  move8: ['.rank-8', '.file-f', '.rank-7', '.file-e', 'WhitePawn'],
+  move9: ['.rank-1', '.file-g', '.rank-3', '.file-f', 'WhiteKnightG']
+};
+function move (whichMove){
+  $(whichMove[0] + ' > ' + whichMove[1]).removeClass(whichMove[4]);
+  $(whichMove[2] + ' > ' + whichMove[3]).addClass(whichMove[4]);
+};
+
+
+window.chess = {
+"game": game,
+"move": move,
 };
   })(window);
 
