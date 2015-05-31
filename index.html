@@ -33,24 +33,24 @@
         </div>
         <div class="chessboard">
             <ul class="row rank-8">
-                <li class="square file-a"></li>
-                <li class="square file-b"></li>
-                <li class="square file-c"></li>
-                <li class="square file-d"></li>
-                <li class="square file-e"></li>
-                <li class="square file-f"></li>
-                <li class="square file-g"></li>
-                <li class="square file-h"></li>
+                <li class="square file-a BlackRookA"></li>
+                <li class="square file-b BlackKnightB"></li>
+                <li class="square file-c BlackBishopC"></li>
+                <li class="square file-d BlackQueen"></li>
+                <li class="square file-e BlackKing"></li>
+                <li class="square file-f BlackBishopF"></li>
+                <li class="square file-g BlackKnightG"></li>
+                <li class="square file-h BlackRookH"></li>
             </ul>
             <ul class="row rank-7">
-                <li class="square file-a"></li>
-                <li class="square file-b"></li>
-                <li class="square file-c"></li>
-                <li class="square file-d"></li>
-                <li class="square file-e"></li>
-                <li class="square file-f"></li>
-                <li class="square file-g"></li>
-                <li class="square file-h"></li>
+                <li class="square file-a BlackPawn"></li>
+                <li class="square file-b BlackPawn"></li>
+                <li class="square file-c BlackPawn"></li>
+                <li class="square file-d BlackPawn"></li>
+                <li class="square file-e BlackPawn"></li>
+                <li class="square file-f BlackPawn"></li>
+                <li class="square file-g BlackPawn"></li>
+                <li class="square file-h BlackPawn"></li>
             </ul>
             <ul class="row rank-6">
                 <li class="square file-a"></li>
@@ -93,24 +93,24 @@
                 <li class="square file-h"></li>
             </ul>
             <ul class="row rank-2">
-                <li class="square file-a"></li>
-                <li class="square file-b"></li>
-                <li class="square file-c"></li>
-                <li class="square file-d"></li>
-                <li class="square file-e"></li>
-                <li class="square file-f"></li>
-                <li class="square file-g"></li>
-                <li class="square file-h"></li>
+                <li class="square file-a WhitePawn"></li>
+                <li class="square file-b WhitePawn"></li>
+                <li class="square file-c WhitePawn"></li>
+                <li class="square file-d WhitePawn"></li>
+                <li class="square file-e WhitePawn"></li>
+                <li class="square file-f WhitePawn"></li>
+                <li class="square file-g WhitePawn"></li>
+                <li class="square file-h WhitePawn"></li>
             </ul>
             <ul class="row rank-1">
-                <li class="square file-a"></li>
-                <li class="square file-b"></li>
-                <li class="square file-c"></li>
-                <li class="square file-d"></li>
-                <li class="square file-e"></li>
-                <li class="square file-f"></li>
-                <li class="square file-g"></li>
-                <li class="square file-h"></li>
+                <li class="square file-a WhiteRookA"></li>
+                <li class="square file-b WhiteKnightB"></li>
+                <li class="square file-c WhiteBishopC"></li>
+                <li class="square file-d WhiteQueen"></li>
+                <li class="square file-e WhiteKing"></li>
+                <li class="square file-f WhiteBishopF"></li>
+                <li class="square file-g WhiteKnightG"></li>
+                <li class="square file-h WhiteRookH"></li>
             </ul>
         </div>
         <!-- .chessboard -->
@@ -125,18 +125,17 @@
             <p class="letters">H</p>
         </div>
           <ul class="buttons">
-              <li><a>&#8676</a></li>
-              <li><a>&larr;</a></li>
+              <li class="firstMove"><a>&#8676;</a></li>
+              <li class="PreviousMove"><a>&larr;</a></li>
               <li>
                   <a class="play-pause"></a>
               </li>
-              <li><a>&rarr;</a></li>
-              <li><a>&#8677</a></li>
+              <li class="NextMove"><a>&rarr;</a></li>
+              <li class="lastMove"><a>&#8677;</a></li>
           </ul>
     </main>
     <!-- .container -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
