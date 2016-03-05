@@ -134,27 +134,35 @@ textarea {
 }
 .chessboard .rank-1::before, .chessboard .rank-1::after {
     content: '1';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-2::before, .chessboard .rank-2::after {
     content: '2';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-3::before, .chessboard .rank-3::after {
     content: '3';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-4::before, .chessboard .rank-4::after {
     content: '4';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-5::before, .chessboard .rank-5::after {
     content: '5';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-6::before, .chessboard .rank-6::after {
     content: '6';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-7::before, .chessboard .rank-7::after {
     content: '7';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-8::before, .chessboard .rank-8::after {
     content: '8';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .square {
     background-color: tan;
@@ -198,7 +206,7 @@ textarea {
     padding-left: .75ex;
     z-index: 2;
 }
-.WhiteRookB::before {
+.WhiteRookH::before {
     content: '\2656';/*White ROOK*/
     font-size: 40pt;
     color: white;
