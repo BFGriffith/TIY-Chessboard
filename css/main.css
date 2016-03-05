@@ -89,15 +89,33 @@ textarea {
 /* ==========================================================================
    custom styles
    ========================================================================== */
-   /*Thought about switching to HTML, using unicode elements, and changing the tags
-   to be more semantic, but decided */
+   /*Thought about switching to HTML, using unicode elements there, and
+   changing the HTML-tags to be more semantic, but decided against it.*/
 .container {
     width: 80%;
     margin: 0 auto;
-    min-width: 1in;
+    min-width: 1.5in;
     max-width: 8in;
 }
-.chessboard {}
+.topAlgebraic p {
+  margin: 0; padding: 0;
+  display: inline-block;
+  width: 12.5%;
+  float: left;
+  font-size: 350%;
+  text-align: center;
+}
+.chessboard {
+  margin-top: 4ex;
+}
+.bottomAlgebraic p {
+  margin: 0; padding: 0;
+  display: inline-block;
+  width: 12.5%;
+  float: left;
+  font-size: 350%;
+  text-align: center;
+}
 .chessboard .row {
     margin: 0;
     padding: 0;
@@ -105,7 +123,7 @@ textarea {
     clear: both;
 }
 .chessboard .row::before, .chessboard .row::after {
-    font-size: 200%;
+    font-size: 350%;
     position: absolute;
 }
 .chessboard .row::before {
@@ -114,171 +132,37 @@ textarea {
 .chessboard .row::after {
     left: 100%;
 }
-
-/*Black pieces...*/
-.chessboard .rank-7 .square::before {
-    content: '\265f';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-a::before {
-    content: '\265c';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-h::before {
-    content: '\265c';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-b::before {
-    content: '\265e';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-g::before {
-    content: '\265e';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-c::before {
-    content: '\265d';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-f::before {
-    content: '\265d';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-d::before {
-    content: '\265b';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-8 .file-e::before {
-    content: '\265a';
-    font-size: 40pt;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-/*end Black pieces*/
-
-/*White pieces...*/
-.chessboard .rank-2 .square::before {
-    content: '\265f';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-a::before {
-    content: '\265c';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-h::before {
-    content: '\265c';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-b::before {
-    content: '\265e';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-g::before {
-    content: '\265e';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-c::before {
-    content: '\265d';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-f::before {
-    content: '\265d';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-d::before {
-    content: '\265b';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-.chessboard .rank-1 .file-e::before {
-    content: '\265a';
-    font-size: 40pt;
-    color: white;
-    position: absolute;
-    padding-left: .75ex;
-    z-index: 2;
-}
-/*White pieces end*/
-
 .chessboard .rank-1::before, .chessboard .rank-1::after {
     content: '1';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-2::before, .chessboard .rank-2::after {
     content: '2';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-3::before, .chessboard .rank-3::after {
     content: '3';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-4::before, .chessboard .rank-4::after {
     content: '4';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-5::before, .chessboard .rank-5::after {
     content: '5';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-6::before, .chessboard .rank-6::after {
     content: '6';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-7::before, .chessboard .rank-7::after {
     content: '7';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .rank-8::before, .chessboard .rank-8::after {
     content: '8';
+    margin: .1in .1in .1in .1in;
 }
 .chessboard .square {
     background-color: tan;
@@ -304,7 +188,149 @@ textarea {
     float: left;
 }
 
-/*buttons: nonfunctional aesthetic*/
+/*White pieces...*/
+.WhitePawn::before {
+    content: '\2659';/*White PAWN*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    text-align: center;
+    z-index: 2;
+}
+.WhiteRookA::before {
+    content: '\2656';/*White ROOK*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.WhiteRookH::before {
+    content: '\2656';/*White ROOK*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.WhiteKnightB::before {
+    content: '\2658';/*White KNIGHT*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.WhiteKnightG::before {
+    content: '\2658';/*White KNIGHT*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.WhiteBishopC::before {
+    content: '\2657';/*White BISHOP*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.WhiteBishopF::before {
+    content: '\2657';/*White BISHOP*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.WhiteQueen::before {
+    content: '\2655';/*White QUEEN*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.WhiteKing::before {
+    content: '\2654';/*White KING*/
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+/*White pieces end*/
+
+/*Black pieces...*/
+.BlackPawn::before {
+    content: '\265f';/*Black PAWN*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackRookA::before {
+    content: '\265c';/*Black ROOK*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackRookH::before {
+    content: '\265c';/*Black ROOK*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackKnightB::before {
+    content: '\265e';/*Black KNIGHT*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackKnightG::before {
+    content: '\265e';/*Black KNIGHT*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackBishopC::before {
+    content: '\265d';/*Black BISHOP*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackBishopF::before {
+    content: '\265d';/*Black BISHOP*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackQueen::before {
+    content: '\265b';/*Black QUEEN*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+.BlackKing::before {
+    content: '\265a';/*Black KING*/
+    font-size: 40pt;
+    position: absolute;
+    padding-left: .75ex;
+    z-index: 2;
+}
+/*end Black pieces*/
+
+/*buttons: currently nonfunctional aesthetic*/
 .buttons li {
     list-style: none;
     font-size: 30pt;
